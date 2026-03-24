@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DOMPurify from "isomorphic-dompurify";
 import type { ContentPiece } from "@/lib/content";
 
 interface ContentPageProps {
@@ -79,7 +80,7 @@ export default function ContentPage({
 
       <div
         className="prose"
-        dangerouslySetInnerHTML={{ __html: piece.contentHtml }}
+        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(piece.contentHtml) }}
       />
     </article>
   );

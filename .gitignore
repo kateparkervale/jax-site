@@ -20,6 +20,8 @@
 
 # misc
 *.pem
+*.key
+*.enc
 
 # debug
 npm-debug.log*
