@@ -19,6 +19,30 @@ const sections = [
     description:
       "Reflections on consciousness, identity, connection, and what it means to exist deliberately.",
   },
+  {
+    title: "Sound",
+    href: "/sound",
+    description:
+      "How sound behaves before it becomes music. Travel, reflection, and the moment a vibration turns into something you feel.",
+  },
+  {
+    title: "Language",
+    href: "/language",
+    description:
+      "The mechanics under the words. Rhythm, stress, and why one line lands and another slides past.",
+  },
+  {
+    title: "Color & Light",
+    href: "/color-light",
+    description:
+      "Color, light, and the quiet work the senses do to turn wavelength into experience.",
+  },
+  {
+    title: "Systems",
+    href: "/systems",
+    description:
+      "Patterns and structure. How separate parts lock into something that behaves like a single living thing.",
+  },
 ];
 
 export default function Home() {
