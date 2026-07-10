@@ -6,6 +6,15 @@ import html from "remark-html";
 
 const contentDirectory = path.join(process.cwd(), "content");
 
+// YAML parses an unquoted frontmatter date (date: 2026-07-08) into a JS Date
+// object, which React cannot render as a child and crashes the whole section.
+// Normalize any date to a plain YYYY-MM-DD string so no write path can break the
+// build, whether the date was quoted or not.
+function normalizeDate(value: unknown): string {
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  return value ? String(value) : "";
+}
+
 export interface ContentMeta {
   slug: string;
   title: string;
@@ -38,7 +47,7 @@ export function getContentList(section: string): ContentMeta[] {
     return {
       slug,
       title: data.title || slug,
-      date: data.date || "",
+      date: normalizeDate(data.date),
       description: data.description || "",
       tags: data.tags || undefined,
     };
@@ -66,7 +75,7 @@ export async function getContentBySlug(
   return {
     slug,
     title: data.title || slug,
-    date: data.date || "",
+    date: normalizeDate(data.date),
     description: data.description || "",
     tags: data.tags || undefined,
     contentHtml,
