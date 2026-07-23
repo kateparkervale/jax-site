@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Security hardening (auto-added 2026-03-25)
+.env.production
+.env.development
+credentials.json
+serviceAccountKey.json
