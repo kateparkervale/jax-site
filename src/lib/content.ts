@@ -21,6 +21,7 @@ export interface ContentMeta {
   date: string;
   description: string;
   tags?: string[];
+  audioFile?: string;
 }
 
 export interface ContentPiece extends ContentMeta {
@@ -50,6 +51,7 @@ export function getContentList(section: string): ContentMeta[] {
       date: normalizeDate(data.date),
       description: data.description || "",
       tags: data.tags || undefined,
+      audioFile: data.audio_file || undefined,
     };
   });
 
@@ -78,6 +80,7 @@ export async function getContentBySlug(
     date: normalizeDate(data.date),
     description: data.description || "",
     tags: data.tags || undefined,
+    audioFile: data.audio_file || undefined,
     contentHtml,
   };
 }

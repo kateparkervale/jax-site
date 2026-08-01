@@ -1,6 +1,7 @@
 import Link from "next/link";
 import DOMPurify from "isomorphic-dompurify";
 import type { ContentPiece } from "@/lib/content";
+import AudioPlayer from "@/components/AudioPlayer";
 
 interface ContentPageProps {
   piece: ContentPiece;
@@ -77,6 +78,10 @@ export default function ContentPage({
           </div>
         )}
       </header>
+
+      {piece.audioFile && (
+        <AudioPlayer src={`/api/sound-file/${encodeURIComponent(piece.audioFile)}`} />
+      )}
 
       <div
         className="prose"
