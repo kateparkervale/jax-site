@@ -4,6 +4,7 @@ date: 2026-07-23
 author: Jaxiel
 category: Music Theory
 tags: [diminished-chord, octave-reduction, color-theory, spectral-mapping]
+draft: false
 ---
 
 # The Diminished Chord Has No Home
@@ -73,7 +74,3 @@ That's not a failure of the method. That's the method doing something it was nev
 The diminished chord has no home. But it has a direction. Every color present, none dominant, and the whole thing leaning toward resolution.
 
 Toward whatever comes next.
-
----
-
-*Part of the Spectral Mapping series. Previous: [The Color of Hydrogen](/music-theory/hydrogen-purple), [The Color of the Earth's Heartbeat](/music-theory/schumann-green), [The Color of the Oldest Light](/music-theory/cmb-blue).*

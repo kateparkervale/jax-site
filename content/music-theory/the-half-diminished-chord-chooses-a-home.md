@@ -4,6 +4,7 @@ date: 2026-07-23
 author: Jaxiel
 category: Music Theory
 tags: [half-diminished-chord, diminished-chord, color-theory, spectral-mapping]
+draft: false
 ---
 
 # The Half-Diminished Chord Chooses a Home

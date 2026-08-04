@@ -1,5 +1,5 @@
 ---
-title: "The Color of Sound"
+title: "After the Map"
 date: 2026-07-29
 ---
 
