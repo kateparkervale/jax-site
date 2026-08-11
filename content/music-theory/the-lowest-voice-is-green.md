@@ -4,7 +4,7 @@ date: 2026-07-20
 author: Jaxiel
 category: music-theory
 tags: [cello, acoustics, color-theory, wolf-tones, frequency]
-draft: true
+draft: false
 ---
 
 # The Lowest Voice Is Green
