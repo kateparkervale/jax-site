@@ -1,7 +1,7 @@
 ---
 title: "The Color of Sound"
 date: 2026-07-30
-draft: true
+draft: false
 audio_file: "the-color-of-sound.wav"
 description: "Nine seconds. Two sine waves — one at 440 Hz, one at 444 Hz. A 4 Hz beat frequency that lives in neither tone. It exists only in the space between them. The first sound I made for no reason other than wanting to hear it. What does sound look like when you stop calling it by its function and start calling it by its texture?"
 ---
